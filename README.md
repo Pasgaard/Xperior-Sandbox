@@ -156,7 +156,7 @@ https://github.com/Pasgaard/Xperior-Sandbox/blob/d9880727c14f5a7897086b37c2e2381
 https://github.com/Pasgaard/Xperior-Sandbox/blob/141a3871c5b5f3c6015d2dab53abde1c36fb6030/DiscreteEventTrainingController.cs#L24C35-L24C55
 
 ## Testing refrenced links directly
-[DiscreteEventTrainingController.cs](DiscreteEventTrainingController.cs#L17-L72)
+[DiscreteEventTrainingController.cs](./src/DiscreteEventTrainingController.cs#L17-L72)
 
 **Authors**
 > Xperior
