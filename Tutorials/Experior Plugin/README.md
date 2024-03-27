@@ -26,7 +26,8 @@ namespace Experior.Plugin.DiscreteEventTraining
         public static DiscreteEventTrainingPlugin Instance => _instance ?? (_instance = new DiscreteEventTrainingPlugin());
 
         public override ImageSource Logo => EmbeddedResource.GetImage("BasicTrainingPlugin");
-
+    }
+}
 ```
 
 ## Extend GUI with a button.
