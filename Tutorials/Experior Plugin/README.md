@@ -10,27 +10,37 @@ _The only difference between an Experior.Core.Plugin and a normal C# Class Libra
 3. 
 
 ## The Plugin basics
-In the plugin a singleton instance is needed and a Logo to be displayed in the GUI
+The class **DiscreteEventTrainingPlugin** will be instantiated by Experior during starting process.
+Here an example of the default content from the template.
+The plugin holds a static embedded resource and a Logo to be displayed in the GUI.
 
 ```csharp
 namespace Experior.Plugin.DiscreteEventTraining
 {
     public class DiscreteEventTrainingPlugin : Experior.Core.Plugin
     {
-        private static DiscreteEventTrainingPlugin _instance; //Singleton
-
         public DiscreteEventTrainingPlugin()
             : base(nameof(DiscreteEventTrainingPlugin))
         {
-            _instance = this;
         }
-
-        public static DiscreteEventTrainingPlugin Instance => _instance ?? (_instance = new DiscreteEventTrainingPlugin());
 
         public override ImageSource Logo => EmbeddedResource.GetImage("BasicTrainingPlugin");
     }
+
+    internal static class EmbeddedResource
+    {
+        private static EmbeddedImageLoader Images { get; } = new Experior.Core.Resources.EmbeddedImageLoader();
+        private static EmbeddedResourceLoader Resource { get; } = new Experior.Core.Resources.EmbeddedResourceLoader();
+
+        public static ImageSource GetImage(string resourceFileName) => Images.Get(resourceFileName);
+        public static Experior.Core.Resources.EmbeddedResource GetResource(string resourceFileName) => Resource.Get(resourceFileName);
+    }
 }
 ```
+
+
+
+![image](https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/f08c6075-2635-41c8-a559-99ea54713277)
 
 ##  Extend the Plugin with GUI Buttons
 
