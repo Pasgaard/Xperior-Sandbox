@@ -1,7 +1,7 @@
 # Xperior-Sandbox
 
 ## The wiki
-https://experior.wiki/
+![Wiki](https://experior.wiki/)
 
 ## Testing videos
 
