@@ -8,16 +8,11 @@
 ### Animated.gif
 ![Gif Format](Videos/GhostWMS.gif)
 
-### Format .mp4
+### MP4 Format
 ![VideoMovFormat.mov](https://github.com/Pasgaard/Xperior-Sandbox/blob/main/Videos/Media1.mp4)
 
-### Format .mov
-![Mov Format](Videos/VideoMovFormat.mov)
-
-Place video here
+### MP4 Format (drag drop)
 ![MP4 video](https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/1f2bf373-d540-43e1-83de-404d262dbdfe)
-
-o here
 
 ## Testing various text formatting 
 
