@@ -46,6 +46,8 @@ namespace Experior.Plugin.DiscreteEventTraining
 
 ## Exercise 1. Create Buttons in the GUI
 
+![image](https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/79d654f2-c3b5-4c3e-83d1-a1442a9f453b)
+
 * In the example below two buttons are created. 
 * Each button will spawn two types of load in the Scene
 
@@ -57,6 +59,9 @@ namespace Experior.Plugin.DiscreteEventTraining
 https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L22-L49
 
 ## The methods for the two types 
+
+![image](https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/7e93cab8-5637-4367-95ee-8155d11841fb)
+
 * Each button will spawn a load using either a BasicFeeder or a CustomFeeder
 * Each method will search for any matching feeders, adn spawn a load on the feeders attached TargetActionPoint
 * The OnClick method writes to the log.
@@ -73,6 +78,9 @@ Core.Environment.InvokeIfRequired(() => {//Do stuff here});
 ```
 
 https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L80-L128
+
+### Video Example
+https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/06d27a09-569e-45f8-9cee-aeea5cd3d250
 
 ## Exercise 2. Extend Plugin with Internal Communication
 * Setting up Internal communication in the plugin requires two methods:
