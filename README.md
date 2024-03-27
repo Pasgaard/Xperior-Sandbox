@@ -50,7 +50,7 @@ Computer | $1600
 Phone | $12
 Pipe | $1
 
-## Testing embedded source code (here C#)
+## Manually embedded source code (here C#)
 
 ```csharp
         /// <summary>
