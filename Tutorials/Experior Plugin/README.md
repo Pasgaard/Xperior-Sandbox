@@ -11,7 +11,7 @@ _The only difference between an Experior.Core.Plugin and a normal C# Class Libra
 
 ## Extend GUI with a button.
 
-
+https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L22-L49
 
 
 ## Extend Plugin with custom connections
