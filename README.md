@@ -5,11 +5,8 @@
 
 ## Testing videos
 
-### Gif Format (animated)
+### GIF Format (file reference ☑️)
 ![Gif Format](Videos/GhostWMS.gif)
-
-### MP4 Format (file reference)
-![Media1.mp4](https://github.com/Pasgaard/Xperior-Sandbox/blob/main/Videos/Media1.mp4)
 
 ### MP4 Format (drag and drop directly into this code file ☑️)
 https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/1f2bf373-d540-43e1-83de-404d262dbdfe
