@@ -42,10 +42,25 @@ namespace Experior.Plugin.DiscreteEventTraining
 }
 ```
 
-# Exercise: Create Buttons in the GUI
+# Exercises
+
+## 1. Create Buttons in the GUI
 
 * In the example below two buttons are created. 
 * Each button will spawn two types of load in the Scene
+
+> [!IMPORTANT]  
+> Since the Buttons are activated on the Main Thread, the Invoke on Engine Thread is required:
+
+> [!TIP]  
+> Required component: **Core.Environment.UI.Toolbar.Button**
+
+* The class TrainingPlugin is first added the Core.Environment.UI.Toolbar.Button
+* The OnClick method writes to the log.
+* Then it finds all Feeders of type CuistomFeeder
+* Each Feeder will now spawn a Load on it’s TargetActionPoint
+* A warning is written in the log if the TargetActionPoint is missing.
+
 
 https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L22-L49
 
@@ -63,7 +78,7 @@ Core.Environment.InvokeIfRequired(() => {//Do stuff here});
 
 https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L80-L128
 
-# Extend Plugin with Internal Communication
+## 2. Extend Plugin with Internal Communication
 
 
 
