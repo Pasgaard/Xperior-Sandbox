@@ -47,6 +47,25 @@ Computer | $1600
 Phone | $12
 Pipe | $1
 
+## Testing colored info boxes
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]  
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]  
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+# Testing embedded source code
+
 ## Manually embedded source code (here C#)
 
 ```csharp
@@ -128,31 +147,13 @@ Pipe | $1
         }
 ```
 
-## Testing colored info boxes
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]  
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]  
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
 ## Embedded link (mark a set of lines in code file. On left side [...] select: Copy Permalink)
-OK
 https://github.com/Pasgaard/Xperior-Sandbox/blob/d9880727c14f5a7897086b37c2e2381cb7b4c5ee/DiscreteEventTrainingController.cs#L32-L49
 
-## Embedded Link (mark a set of characxter on the same line. On left side [...] select: Copy Permalink)
+## Mark a set of characxter on the same line. On left side [...] select: Copy Permalink - this will only create a link (not embedded!)
 https://github.com/Pasgaard/Xperior-Sandbox/blob/141a3871c5b5f3c6015d2dab53abde1c36fb6030/DiscreteEventTrainingController.cs#L24C35-L24C55
 
-## Testing refrenced links directly
+## Testing refrenced links directly (./src/DiscreteEventTrainingController.cs#L17-L72)
 [DiscreteEventTrainingController.cs](./src/DiscreteEventTrainingController.cs#L17-L72)
 
 **Authors**
