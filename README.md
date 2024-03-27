@@ -154,7 +154,7 @@ Some text with a footnote.[^1]
 
 ## Testing embedded links (use permalink: in code mark a set of lines and on the left side [...] select Create Permalink)
 OK
-https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/b2117cacc68f84b30c8a6bfd271157513682e734/Test.cs#L24-L31
+[https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/b2117cacc68f84b30c8a6bfd271157513682e734/Test.cs#L24-L31](https://github.com/Pasgaard/Xperior-Sandbox/blob/d9880727c14f5a7897086b37c2e2381cb7b4c5ee/DiscreteEventTrainingController.cs#L32-L49)
 
 ## Testing embedded links (again use permalink: but select only a set of characxter on the same line)
 https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/b2117cacc68f84b30c8a6bfd271157513682e734/Test.cs#LL24C5-L24C20
