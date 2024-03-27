@@ -149,11 +149,11 @@ Some text with a footnote.[^1]
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-## Testing embedded links (use permalink: in code mark a set of lines and on the left side [...] select: Copy Permalink)
+## Embedded link (mark a set of lines in code file. On left side [...] select: Copy Permalink)
 OK
 https://github.com/Pasgaard/Xperior-Sandbox/blob/d9880727c14f5a7897086b37c2e2381cb7b4c5ee/DiscreteEventTrainingController.cs#L32-L49
 
-## Testing embedded links (again use permalink: but select only a set of characxter on the same line)
+## Link (mark a set of characxter on the same line. On left side [...] select: Copy Permalink)
 https://github.com/Pasgaard/Xperior-Sandbox/blob/d9880727c14f5a7897086b37c2e2381cb7b4c5ee/DiscreteEventTrainingController.cs#LL32C1-L32C15
 
 ## Testing refrenced links directly
