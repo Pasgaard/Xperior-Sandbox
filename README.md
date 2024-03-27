@@ -6,7 +6,7 @@
 ## Testing videos
 
 ### Animated.gif
-![Gif Format](GhostWMS.gif)
+![Gif Format](Videos/GhostWMS.gif)
 
 ### Format .mp4
 ![VideoMovFormat.mov](https://github.com/Pasgaard/Xperior-Sandbox/blob/main/Videos/Media1.mp4)
