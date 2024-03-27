@@ -7,11 +7,15 @@ _The only difference between an Experior.Core.Plugin and a normal C# Class Libra
 
 1. The Plucing basics
 2. Extend the Plugin with GUI Buttons
-3. 
+3. Internal Communication example
 
 ## The Plugin basics
-The class **DiscreteEventTrainingPlugin** will be instantiated by Experior during starting process.
-Here an example of the default content from the template.
+
+* Requirement: A new The Experior Plugin Template.
+* Prerequisites: Creation of a new Visual Studio project based on this template.
+  
+The class **DiscreteEventTrainingPlugin** will be instantiated by Experior during starting process. 
+Here below is an example of the default content from the template. 
 The plugin holds a static embedded resource and a Logo to be displayed in the GUI.
 
 ```csharp
@@ -39,13 +43,21 @@ namespace Experior.Plugin.DiscreteEventTraining
 ```
 
 
-
-![image](https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/f08c6075-2635-41c8-a559-99ea54713277)
-
-##  Extend the Plugin with GUI Buttons
+* In the example below two buttons are created. 
+* Each button will spawn two types of load in the Scene
 
 https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L22-L49
 
+### The methods for the two types 
+
+> [!IMPORTANT]  
+> Since the Buttons are activated on the Main Thread, the Invoke on Engine Thread is required:
+
+```csharp
+Core.Environment.InvokeIfRequired(() => {//Do stuff here});
+```
+
+https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L80-L128
 
 ## Extend Plugin with custom connections
 
