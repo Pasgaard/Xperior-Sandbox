@@ -9,6 +9,26 @@
 ## Description
 _The only difference between an Experior.Core.Plugin and a normal C# Class Library (dynamic link library) is the access to Experior functionality and an embedded ‘tail’ containing a license-key for the plugin to be used in Experior._ 
 
+## The Basics
+```csharp
+namespace Experior.Plugin.DiscreteEventTraining
+{
+    public class DiscreteEventTrainingPlugin : Experior.Core.Plugin
+    {
+        private static DiscreteEventTrainingPlugin _instance; //Singleton
+
+        public DiscreteEventTrainingPlugin()
+            : base(nameof(DiscreteEventTrainingPlugin))
+        {
+            _instance = this;
+        }
+
+        public static DiscreteEventTrainingPlugin Instance => _instance ?? (_instance = new DiscreteEventTrainingPlugin());
+
+        public override ImageSource Logo => EmbeddedResource.GetImage("BasicTrainingPlugin");
+
+```
+
 ## Extend GUI with a button.
 
 https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L22-L49
