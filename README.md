@@ -28,12 +28,9 @@
 
 List of things:
 - [ ] Unchecked
-- [ ] Unchecked
 - [x] Checked
-
-- [x] #739
 - [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
+- [ ] Keep fighting :🇺🇦:
 
 
 ## Testing various tables formatting 
