@@ -32,6 +32,7 @@ List of things:
 - [ ] https://experior.wiki/
 - [ ] Keep fighting :ukraine:
 
+Some text with a footnote.[^1]
 
 ## Testing various tables formatting 
 
@@ -48,8 +49,6 @@ Item | Value
 Computer | $1600
 Phone | $12
 Pipe | $1
-Some text with a footnote.[^1]
-
 
 ## Testing embedded source code (here C#)
 
