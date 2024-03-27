@@ -1,15 +1,14 @@
 # Xperior-Sandbox
-Test
 
+## Testing videos
 
-# My Headline
+### Animated.gif
+![Gif Format](GhostWMS.gif)
 
-## To be honest
+### Video.mov
+![Mov Format](VideoMovFormat.mov)
 
-![Video](GhostWMS.gif)
-
-<span style="color: #FF69B4;">Why did the tomato turn red?</span>
-A few weeks ago bla..bla..
+## Testing various text formatting 
 
 *Emphasize*  _emphasize_
 
@@ -25,6 +24,31 @@ List of things:
 - [ ] Unchecked
 - [ ] Unchecked
 - [x] Checked
+
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
+
+## Testing various tables formatting 
+
+**Tables:**
+
+| Column 1     | Column 2 | Column 3      |
+|:-------------|:--------:| -------------:|
+| left-aligned | centered | right-aligned |
+
+**Another Table**
+
+Item | Value
+-------- | -----
+Computer | $1600
+Phone | $12
+Pipe | $1
+Some text with a footnote.[^1]
+
+
+## Testing embedded source code (here C#)
 
 ```csharp
 
@@ -85,25 +109,7 @@ class Program
 }
 ```
 
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
-
-
-**Tables:**
-
-| Column 1     | Column 2 | Column 3      |
-|:-------------|:--------:| -------------:|
-| left-aligned | centered | right-aligned |
-
-**Another Table**
-
-Item | Value
--------- | -----
-Computer | $1600
-Phone | $12
-Pipe | $1
-Some text with a footnote.[^1]
+## Testing colored info boxes
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
@@ -120,16 +126,24 @@ Some text with a footnote.[^1]
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-**Authors**
-> Xperior Staff
-
+## Testing embedded links (use permalink: in code mark a set of lines and on the left side [...] select Create Permalink)
+OK
 https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/b2117cacc68f84b30c8a6bfd271157513682e734/Test.cs#L24-L31
 
+## Testing embedded links (again use permalink: but select only a set of characxter on the same line)
 https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/b2117cacc68f84b30c8a6bfd271157513682e734/Test.cs#LL24C5-L24C20
+NOT OK => will only create a link
 
+## Testing refrenced links (use permalink)
 https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/main/Test.cs?plain=1#L37-L72
+=> will only create a link
+
+## Testing refrenced links directly
 
 **Link to code lines here::**
 [Test.cs](Test.cs#L17-L72)
+
+**Authors**
+> Xperior Staff
 
 [^1]: The footnote.
