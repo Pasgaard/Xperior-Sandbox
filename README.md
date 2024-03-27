@@ -3,6 +3,8 @@
 ## The wiki
 [Wiki](https://experior.wiki/)
 
+![image](https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/761cd124-c125-496d-b230-ce41a4a9aa90)
+
 ## Testing videos
 
 ### GIF Format (file reference ☑️)
