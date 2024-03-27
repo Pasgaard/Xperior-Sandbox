@@ -30,7 +30,7 @@ List of things:
 - [ ] Unchecked
 - [x] Checked
 - [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Keep fighting :🇺🇦:
+- [ ] Keep fighting :ukraine:
 
 
 ## Testing various tables formatting 
