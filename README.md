@@ -6,7 +6,7 @@ Test
 
 ## To be honest
 
-![Video](Media1.mp4)
+![Video](GhostWMS.gif)
 
 <span style="color: #FF69B4;">Why did the tomato turn red?</span>
 A few weeks ago bla..bla..
