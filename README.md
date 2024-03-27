@@ -29,7 +29,7 @@
 List of things:
 - [ ] Unchecked
 - [x] Checked
-- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] https://experior.wiki/
 - [ ] Keep fighting :ukraine:
 
 
@@ -154,19 +154,12 @@ OK
 https://github.com/Pasgaard/Xperior-Sandbox/blob/d9880727c14f5a7897086b37c2e2381cb7b4c5ee/DiscreteEventTrainingController.cs#L32-L49
 
 ## Testing embedded links (again use permalink: but select only a set of characxter on the same line)
-https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/b2117cacc68f84b30c8a6bfd271157513682e734/Test.cs#LL24C5-L24C20
-NOT OK => will only create a link
-
-## Testing refrenced links 
-https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/main/Test.cs?plain=1#L37-L72
-=> will only create a link
+https://github.com/Pasgaard/Xperior-Sandbox/blob/d9880727c14f5a7897086b37c2e2381cb7b4c5ee/DiscreteEventTrainingController.cs#LL32C1-L32C15
 
 ## Testing refrenced links directly
-
-**Link to code lines here::**
 [DiscreteEventTrainingController.cs](DiscreteEventTrainingController.cs#L17-L72)
 
 **Authors**
-> Xperior Staff
+> Xperior
 
 [^1]: The footnote.
