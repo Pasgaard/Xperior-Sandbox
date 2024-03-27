@@ -57,62 +57,82 @@ Some text with a footnote.[^1]
 ## Testing embedded source code (here C#)
 
 ```csharp
+        /// <summary>
+        /// Receive a telegram (byte array) on the STX/ETX connection
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="message"></param>
+        private void Ascii_TelegramReceived(Core.Communication.Connection connection, string message)
+        {
+            lock (_sendReceiveLock)
+            {
+                Core.Environment.InvokeIfRequired(() =>
+                {
+                    Log.Write($"Receive message: [{message}]");
 
-using System;
-using System.Threading;
-using System.ComponentModel;
- 
-class Program
-{
-  static BackgroundWorker _bw;
- 
-  static void Main()
-  {
-    _bw = new BackgroundWorker
-    {
-      WorkerReportsProgress = true,
-      WorkerSupportsCancellation = true
-    };
+                    //Simple Protocol: "Direction|Type|Command|MessageCounter|LoadId|DecisionPoint|DestinationPoint"
+                    var parts = message.Split('|');
 
-    _bw.DoWork += bw_DoWork;
-    _bw.ProgressChanged += bw_ProgressChanged;
-    _bw.RunWorkerCompleted += bw_RunWorkerCompleted;
+                    var direction = parts[0];
+                    var type = parts[1];
+                    var command = parts[2];
+                    var messageCounter = parts[3];
+                    var loadId = parts[4];
+                    var decisionPoint = parts[5];
+                    var destinationPoint = parts[6];
 
-    _bw.RunWorkerAsync ("Hello to worker");
- 
-    Console.WriteLine ("Press Enter in the next 5 seconds to cancel");
-    Console.ReadLine();
-    if (_bw.IsBusy) _bw.CancelAsync();
-    Console.ReadLine();
-  }
- 
-  static void bw_DoWork (object sender, DoWorkEventArgs e)
-  {
-    for (int i = 0; i <= 100; i += 20)
-    {
-      if (_bw.CancellationPending) { e.Cancel = true; return; }
-      _bw.ReportProgress (i);
-      Thread.Sleep (1000);      // Just for the demo... don't go sleeping
-    }                           // for real in pooled threads!
- 
-    e.Result = 123;    // This gets passed to RunWorkerCompleted
-  }
- 
-  static void bw_RunWorkerCompleted (object sender, RunWorkerCompletedEventArgs e)
-  {
-    if (e.Cancelled)
-      Console.WriteLine ("You canceled!");
-    else if (e.Error != null)
-      Console.WriteLine ("Worker exception: " + e.Error.ToString());
-    else
-      Console.WriteLine ("Complete: " + e.Result);      // from DoWork
-  }
- 
-  static void bw_ProgressChanged (object sender, ProgressChangedEventArgs e)
-  {
-    Console.WriteLine ("Reached " + e.ProgressPercentage + "%");
-  }
-}
+                    switch (type)
+                    {
+                        case "Request":
+                            switch (command)
+                            {
+                                case "LoadSpawn": //"WmsToPlc|Request|LoadSpawn|..."
+                                    var feeders = Core.Assemblies.Assembly.Items.Where(item => item is CustomFeeder);
+                                    if (!feeders.Any())
+                                        return;
+
+                                    var feeder = feeders.Cast<CustomFeeder>().FirstOrDefault(f => f.TargetActionPoint.Equals(destinationPoint));
+                                    if (feeder == null)
+                                        return;
+
+                                    var load = feeder.Feed(Colors.Goldenrod);
+                                    uint loadIdentification = Convert.ToUInt32(load.Identification); // 11111;
+
+                                    Log.Write($"Feeder {feeder.Name} created load on {feeder.TargetActionPoint}");
+
+                                    var replyTelegram = $"PlcToWms|Reply|LoadSpawn|{messageCounter}|{loadIdentification}||{destinationPoint}";
+                                    StxEtxSend(replyTelegram);
+                                    break;
+                                default:
+                                    Log.Write($"Error: command does not exist: {command}.");
+                                    break;
+                            }
+                            break;
+                        case "Reply":
+                            switch (command)
+                            {
+                                case "LoadDestination": //"WmsToPlc|Reply|LoadDestination|..."
+                                    Load load = (Load)Experior.Core.Loads.Load.Items.FirstOrDefault(l => l.Identification == loadId);
+                                    if (load == null)
+                                        return;
+
+                                    load.MoveTo(destinationPoint);
+                                    load.Release();
+
+                                    Log.Write($"Moving load {load.Identification} to {destinationPoint}");
+                                    break;
+                                default:
+                                    Log.Write($"Error: command does not exist: {command}.");
+                                    break;
+                            }
+                            break;
+                        default:
+                            Log.Write($"Error: type does not exist: {type}.");
+                            break;
+                    }
+                });
+            }
+        }
 ```
 
 ## Testing colored info boxes
@@ -140,14 +160,14 @@ https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/b2117cacc68f84b30c8a6bfd
 https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/b2117cacc68f84b30c8a6bfd271157513682e734/Test.cs#LL24C5-L24C20
 NOT OK => will only create a link
 
-## Testing refrenced links (use permalink)
+## Testing refrenced links 
 https://github.com/Pasgaard/Godot-2D-Space-Shooter/blob/main/Test.cs?plain=1#L37-L72
 => will only create a link
 
 ## Testing refrenced links directly
 
 **Link to code lines here::**
-[Test.cs](Test.cs#L17-L72)
+[DiscreteEventTrainingController.cs](DiscreteEventTrainingController.cs#L17-L72)
 
 **Authors**
 > Xperior Staff
