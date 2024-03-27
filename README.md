@@ -153,8 +153,8 @@ Some text with a footnote.[^1]
 OK
 https://github.com/Pasgaard/Xperior-Sandbox/blob/d9880727c14f5a7897086b37c2e2381cb7b4c5ee/DiscreteEventTrainingController.cs#L32-L49
 
-## Link (mark a set of characxter on the same line. On left side [...] select: Copy Permalink)
-https://github.com/Pasgaard/Xperior-Sandbox/blob/141a3871c5b5f3c6015d2dab53abde1c36fb6030/DiscreteEventTrainingController.cs#L14
+## Embedded Link (mark a set of characxter on the same line. On left side [...] select: Copy Permalink)
+https://github.com/Pasgaard/Xperior-Sandbox/blob/141a3871c5b5f3c6015d2dab53abde1c36fb6030/DiscreteEventTrainingController.cs#L24C35-L24C55
 
 ## Testing refrenced links directly
 [DiscreteEventTrainingController.cs](DiscreteEventTrainingController.cs#L17-L72)
