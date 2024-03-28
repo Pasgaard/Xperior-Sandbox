@@ -3,12 +3,12 @@
 ![Plugin](https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/2ae16ca8-082b-48f9-aeb1-d496fba9096e=20x20)
 
 ## Description
-_The only difference between an Experior.Core.Plugin and a normal C# Class Library (dynamic link library) is the access to Experior functionality and an embedded ‘tail’ containing a license-key for the plugin to be used in Experior._ 
+_The only difference between an Experior.Core.Plugin and a normal C# Class Library (dynamic link library) is the access to Experior functionality and an embedded ‘tail’ containing a license-key for the plugin to be available in Experior._ 
 
 ## Topics
 1. The Plucing basics
-2. Extend the Plugin with GUI Buttons
-3. Internal Communication example
+2. Exercise1: Extend the Plugin with GUI Buttons
+3. Exercise2: Extend the Plugin with Internal Communication
 
 ## The Plugin basics
 * Requirement: A new The Experior Plugin Template.
@@ -49,29 +49,28 @@ namespace Experior.Plugin.DiscreteEventTraining
 ![image](https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/79d654f2-c3b5-4c3e-83d1-a1442a9f453b)
 
 * In the example below two buttons are created. 
-* Each button will spawn two types of load in the Scene
+* Each button will spawn a different type of load into the Scene.
 
 > [!TIP]  
 > Required component: **Core.Environment.UI.Toolbar.Button**
 
-* The class TrainingPlugin is first added the Core.Environment.UI.Toolbar.Button
+* The class DiscreteEventTrainingPlugin will first have the Core.Environment.UI.Toolbar.Button added.
 
 https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L22-L49
 
-## The methods for the two types 
+## Examples of the methods for the two load types. 
 
 ![image](https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/7e93cab8-5637-4367-95ee-8155d11841fb)
 
-* Each button will spawn a load using either a BasicFeeder or a CustomFeeder
-* Each method will search for any matching feeders, adn spawn a load on the feeders attached TargetActionPoint
+* Each button will spawn a load using either a BasicFeeder or a CustomFeeder.
+* Each method will search for any matching feeders, adn spawn a load on the feeders attached TargetActionPoint.
 * The OnClick method writes to the log.
-* Then it finds all Feeders of type BasicFeeder or CustomFeeder
-* Each Feeder will now spawn a Load on it’s TargetActionPoint
+* Then it finds all Feeders of type BasicFeeder or CustomFeeder.
+* Each Feeder will now spawn a Load on it’s TargetActionPoint.
 * A warning is written in the log if the TargetActionPoint is missing.
 
-
 > [!IMPORTANT]  
-> Since the Buttons are activated on the Main Thread, the Invoke on Engine Thread is required:
+> Since the Buttons are activated on the Main Thread, an Invoke on the Engine Thread is required!
 
 ```csharp
 Core.Environment.InvokeIfRequired(() => {//Do stuff here});
