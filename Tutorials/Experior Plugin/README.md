@@ -11,7 +11,7 @@ _The only difference between an Experior.Core.Plugin and a normal C# Class Libra
 3. Exercise 2: Extend the Plugin with Internal Communication
 
 ## The Plugin basics
-* Requirement: A new The Experior Plugin Template.
+* Requirement: The Experior Plugin Template for Visual Studio.
 * Prerequisites: Creation of a new Visual Studio project based on this template.
   
 The class **DiscreteEventTrainingPlugin** will be instantiated by Experior during starting process. 
@@ -65,8 +65,8 @@ https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2
 * Each button will spawn a load using either a BasicFeeder or a CustomFeeder.
 * Each method will search for any matching feeders, adn spawn a load on the feeders attached TargetActionPoint.
 * The OnClick method writes to the log.
-* Then it finds all Feeders of type BasicFeeder or CustomFeeder.
-* Each Feeder will now spawn a Load on it’s TargetActionPoint.
+* The method finds all Feeders of type BasicFeeder or CustomFeeder.
+* Each Feeder will now spawn a Load at the TargetActionPoint.
 * A warning is written in the log if the TargetActionPoint is missing.
 
 > [!IMPORTANT]  
