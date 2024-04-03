@@ -6,9 +6,9 @@
 _The only difference between an Experior.Core.Plugin and a normal C# Class Library (dynamic link library) is the access to Experior functionality and an embedded ‘tail’ containing a license-key for the plugin to be available in Experior._ 
 
 ## Topics
-1. The Plucing basics
-2. Exercise1: Extend the Plugin with GUI Buttons
-3. Exercise2: Extend the Plugin with Internal Communication
+1. The Plugin basics
+2. Exercise 1: Extend the Plugin with GUI Buttons
+3. Exercise 2: Extend the Plugin with Internal Communication
 
 ## The Plugin basics
 * Requirement: A new The Experior Plugin Template.
