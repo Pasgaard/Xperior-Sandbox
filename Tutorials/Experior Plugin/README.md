@@ -83,7 +83,6 @@ https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/06d27a09-569e-45f8-9
 
 ## Exercise 2. Extend Plugin with Internal Communication
 * Setting up Internal communication in the plugin requires two methods:
-* To send or broadcast a message 
 
 https://github.com/Pasgaard/Xperior-Sandbox/blob/017da174a05fbd07ccac5b7f6e21eb2b3a636403/src/DiscreteEventTrainingPlugin.cs#L63-L78
 
