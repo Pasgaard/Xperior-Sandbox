@@ -64,7 +64,7 @@ Pipe | $1
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-![TEST UML](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/pasgaard/Xperior-Sandbox/master/test.iuml)
+![TEST PLANT UML](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/pasgaard/Xperior-Sandbox/master/test.iuml)
 
 See https://github.com/jonashackt/plantuml-markdown?tab=readme-ov-file
 
