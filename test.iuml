@@ -1,6 +1,7 @@
 @startuml
 Class Person #back:white;header:Green
 {
+- Id: int
 + Name: string
 + Age: int
 }
