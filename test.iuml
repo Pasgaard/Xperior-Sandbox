@@ -1,9 +1,10 @@
 @startuml
 Class Person #back:white;header:Green
 {
-- Id: int
-+ Name: string
-+ Age: int
+-Id: int
++Name: string
++Age: int
++CalculateWeightedAverage()
 }
 Person <|-- Class02
 Class03 *-- Class04
