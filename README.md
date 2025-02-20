@@ -64,16 +64,8 @@ Pipe | $1
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-```
-@startuml firstDiagram
-Class01 <|-- Class02
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 -- Class10
-@enduml
-```
 
+![TEST UML](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/pasgaard/Xperior-Sandbox/master/test.iuml)
 
 # Testing embedded source code
 
