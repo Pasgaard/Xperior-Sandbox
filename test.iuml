@@ -1,15 +1,124 @@
 @startuml
-Class Person #back:white;header:Green
+'==============================================================================
+'Create classes and interfaces
+'==============================================================================
+
+Interface IFlowCounter #header:black
 {
--Id: int
-#Senior: bool
-+Name: string
-+Age: int
-+CalculateWeightedAverage()
+	+ Group: string
+	+ SubGroup: string
+	+ CalculateWeightedAverage()
+	+ Reset()
+	+ ResetPeriod()
+	+ Update(int value)
+	+ IncrementItemsTrafficIntoArea();
+	+ DecrementItemsTrafficOutOfArea();
 }
+
+Class FlowCounterCollection #header:goldenrod
+{
+	+ SheetName: string
+	+ CountersCurrentPeriod: List<IFlowCounter>
+	+ CountersAllPeriods: Dictionary<TimeSpan, List<IFlowCounter>>
+
+	+ CalculateWeightedAverage()
+}
+
+Class FlowCounter #header:darkgreen;
+{
+	+ Name: string
+	+ Group: string
+	+ SubGroup: string
+	+ Time: TimeSpan
+	+ ItemsCurrentInArea: int
+	+ ItemsTrafficIntoArea: int
+	+ ItemsTrafficOutOfArea: int
+	+ Minimum: int
+	+ Maximum: int
+	+ WeightedAverage: double
+	+ IncrementItemsTrafficIntoArea()
+	+ DecrementItemsTrafficOutOfArea()
+	+ Update(int count)
+	+ CalculateWeightedAverage()
+	+ Reset()
+	+ ResetPeriod()
+}
+
+Class FlowCounterGroup #header:darkred
+{
+	- Id: int;
+	+ Name: string
+	+ Age: int
+	+ CalculateWeightedAverage()
+}
+
+'==============================================================================
+'Connect components here
+'==============================================================================
+
+IFlowCounter <|-- FlowCounter
+FlowCounterCollection -[hidden]> FlowCounter
+FlowCounterCollection -[hidden]--> FlowCounterGroup 
+
 Person <|-- Class02
 Class03 *-- Class04
 Class05 o-- Class06
 Class07 .. Class08
 Class09 -- Class10
+
+'==============================================================================
+'Setup Styles 
+'==============================================================================
+
+<style>
+	'========================================================
+	'Interface - SpotInterface is the round circle with (I)
+	'========================================================
+	spotInterface
+	{
+		BackgroundColor white
+		LineColor black
+		FontName SansSerif
+		FontColor black
+	}
+
+	Interface
+	{
+		FontColor black
+		BackgroundColor white
+		header 
+		{
+			FontSize 14
+			FontColor white
+			FontStyle regular
+		}
+	}
+
+	'========================================================
+	'Class: SpotClass is the round circle with (C)
+	'========================================================
+	spotClass 
+	{
+		BackgroundColor white
+		LineColor white
+		FontName SansSerif
+		FontColor black
+	}
+
+	classDiagram 
+	{
+		class 
+		{
+			FontColor black
+			BackgroundColor white
+			header 
+			{
+				FontSize 14
+				FontColor white
+				FontStyle regular
+			}
+		}
+	}
+</style>
+
 @enduml
