@@ -6,7 +6,7 @@ I wanted to see the output of various texts and properties, tables, links, image
 
 Today we use tools to make screenshots of source code we want to embed in the training documents. 
 This is typically to keep the format and coloring of the code, but it means the users cannot copy from these lines. 
-We also use animations, but these are hard to embed in traditional docs.
+We also use animations, but these are hard to embed in traditional documents.
 
 * Using MarkDown on github could solve thie issues and a lot more:
 * It's also possible to convert Markdown to PDF where neded:  https://github.com/simonhaenisch/md-to-pdf
