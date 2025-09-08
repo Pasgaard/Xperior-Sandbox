@@ -4,7 +4,7 @@
 [Wiki](https://experior.wiki/)
 
 ## The Overview
-[Overview](ExperiorDeveloperTrainingOverview.drawio)
+<a href="ExperiorDeveloperTrainingOverview.drawio.svg" target="_blank">Test!</a>
 
 
 ## Testing videos
