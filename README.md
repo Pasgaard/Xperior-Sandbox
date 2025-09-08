@@ -2,7 +2,21 @@
 
 ## The Markdown versus traditional documentation
 
+I wanted to see the output of various texts and properties, tables, links, images, videos, source code references, uml diagrams etc..
 
+Today we use tools to make screenshots of source code we want to embed in the training documents. 
+This is typically to keep the format and coloring of the code, but it means the users cannot copy from these lines. 
+
+We also use animations, but these are hard to embed in traditional docs.
+Using Markdown we can solve a lot of these issues:
+
+* Using MarkDown on github could solve this.
+* It's also possible to convert Markdown to PDF	https://github.com/simonhaenisch/md-to-pdf
+* You can also have animated GIFs and MP4 files in MarkDown
+* Using an public open github, we can make changes in one place, and it effects immediately for all participants - no handover/exchange of documentation from trainer to trainees.
+* It also means, that any users previously attend the training always will have access to the latest material/tutorials.
+* Also compilable C# source code solutions will available to download directly from this site.
+* You can probably extend this list yourself :wink:  
 
 ## The Wiki
 [Wiki](https://experior.wiki/)
