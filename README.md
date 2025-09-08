@@ -16,6 +16,8 @@ Using Markdown we can solve a lot of these issues:
 * Using an public open github, we can make changes in one place, and it effects immediately for all participants - no handover/exchange of documentation from trainer to trainees.
 * It also means, that any users previously attend the training always will have access to the latest material/tutorials.
 * Also compilable C# source code solutions will available to download directly from this site.
+* Below you'll find examples where specific ranges of lines and or characters are highlighted from a source file, which means the copy and paste cna be reduced.
+* You will find links directly to the Experior Wiki
 * You can probably extend this list yourself :wink:  
 
 ## The Wiki
