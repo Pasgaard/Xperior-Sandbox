@@ -8,7 +8,7 @@ Today we use tools to make screenshots of source code we want to embed in the tr
 This is typically to keep the format and coloring of the code, but it means the users cannot copy from these lines. 
 We also use animations, but these are hard to embed in traditional documents.
 
-* Using MarkDown on github could solve thie issues and a lot more:
+* Using MarkDown on github could solve these issues and a lot more:
 * It's also possible to convert Markdown to PDF where neded:  https://github.com/simonhaenisch/md-to-pdf
 * You can also have animated GIFs and MP4 files in MarkDown.
 * Using an public open github, we can make changes in one place, and it effects immediately for all participants - no handover/exchange of documentation from trainer to trainees.
