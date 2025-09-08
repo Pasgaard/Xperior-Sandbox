@@ -4,9 +4,7 @@
 [Wiki](https://experior.wiki/)
 
 ## The Overview
-![Overview](./Experior%20Developer%20Training%20Overview.drawio.svg)
-
-![Overview 2](https://raw.githubusercontent.com/Pasgaard/Xperior-Sandbox/cf4a19fcba056738fcd779de0c32f003d93d897f/Experior%20Developer%20Training%20Overview.drawio.svg))
+![Overview](https://raw.githubusercontent.com/Pasgaard/Xperior-Sandbox/cf4a19fcba056738fcd779de0c32f003d93d897f/Experior%20Developer%20Training%20Overview.drawio.svg))
 
 ## Testing videos
 
