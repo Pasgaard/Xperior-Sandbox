@@ -12,8 +12,8 @@ We also use animations, but these are hard to embed in traditional documents.
 * It's also possible to convert Markdown to PDF where neded:  https://github.com/simonhaenisch/md-to-pdf
 * You can also have animated GIFs and MP4 files in MarkDown.
 * Using an public open github, we can make changes in one place, and it effects immediately for all participants - no handover/exchange of documentation from trainer to trainees.
-* It also means, that any users previously attended the training always will have access to the latest changeds in material/tutorials/exercises.
-* All exercises are found in fully compilable C# source code solutions available to download directly from this site.
+* It also means, that any users previously attended the training always will have access to the latest additions and changes in material/tutorials/exercises.
+* All exercises are fully compilable C# source code solutions available to download directly from this site.
 * Below you'll find examples where specific ranges of lines and or characters are highlighted from a source file, which means the copy and paste of code lines can be reduced.
 * We have links directly to the Experior Wiki and API.
 * Displaying huge SVG overview images (click at the Overview image)
