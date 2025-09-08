@@ -6,6 +6,7 @@
 ## The Overview
 ![Overview](./Experior%20Developer%20Training%20Overview.drawio.svg)
 
+<a class="btn1" href="./Experior%20Developer%20Training%20Overview.drawio.svg" target="_blank">Display Info</a>
 ## Testing videos
 
 ### GIF Format (file reference ☑️)
