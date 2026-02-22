@@ -1,18 +1,37 @@
 # Xperior-Sandbox
 
-## The wiki
+## The Markdown versus traditional documentation
+
+I wanted to see the output of various texts and properties, tables, links, images, videos, source code references, uml diagrams etc..
+
+Today we use tools to make screenshots of source code we want to embed in the training documents. 
+This is typically to keep the format and coloring of the code, but it means the users cannot copy from these lines. 
+We also use animations, but these are hard to embed in traditional documents.
+
+* Using MarkDown on github could solve these issues and a lot more:
+* It's also possible to convert Markdown to PDF where neded:  https://github.com/simonhaenisch/md-to-pdf
+* You can also have animated GIFs and MP4 files in MarkDown.
+* Using an public open github, we can make changes in one place, and it effects immediately for all participants - no handover/exchange of documentation from trainer to trainees.
+* It also means, that any users previously attended the training always will have access to the latest additions and changes in material/tutorials/exercises.
+* All exercises are fully compilable C# source code solutions available to download directly from this site.
+* Below you'll find examples where specific ranges of lines and or characters are highlighted from a source file, which means the copy and paste of code lines can be reduced.
+* We have links directly to the Experior Wiki and API.
+* Displaying huge SVG overview images (click at the Overview image)
+* You can probably extend this list yourself :wink:  
+
+## The Wiki
 [Wiki](https://experior.wiki/)
+
+## The Overview
+![Overview](https://raw.githubusercontent.com/Pasgaard/Xperior-Sandbox/cf4a19fcba056738fcd779de0c32f003d93d897f/Experior%20Developer%20Training%20Overview.drawio.svg))
 
 ## Testing videos
 
 ### Animated.gif
 ![Gif Format](Videos/GhostWMS.gif)
 
-### Format .mp4
-![VideoMovFormat.mov](https://github.com/Pasgaard/Xperior-Sandbox/blob/main/Videos/Media1.mp4)
-
-### Format .mov
-![Mov Format](Videos/VideoMovFormat.mov)
+### MP4 Format (drag and drop directly into this code file ☑️)
+https://github.com/Pasgaard/Xperior-Sandbox/assets/12232128/1f2bf373-d540-43e1-83de-404d262dbdfe
 
 ![alt text](image-2.png)
 
@@ -52,7 +71,32 @@ Computer | $1600
 Phone | $12
 Pipe | $1
 
-## Testing embedded source code (here C#)
+## Testing colored info boxes
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]  
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]  
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+# Testing embedded Plant UML code
+
+![TEST PLANT UML](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/pasgaard/Xperior-Sandbox/master/test.iuml)
+
+See https://github.com/jonashackt/plantuml-markdown?tab=readme-ov-file
+
+# Testing embedded source code
+
+## Manually embedded source code (here C#)
 
 ```csharp
         /// <summary>
@@ -133,32 +177,14 @@ Pipe | $1
         }
 ```
 
-## Testing colored info boxes
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]  
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]  
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
 ## Embedded link (mark a set of lines in code file. On left side [...] select: Copy Permalink)
-OK
 https://github.com/Pasgaard/Xperior-Sandbox/blob/d9880727c14f5a7897086b37c2e2381cb7b4c5ee/DiscreteEventTrainingController.cs#L32-L49
 
-## Embedded Link (mark a set of characxter on the same line. On left side [...] select: Copy Permalink)
+## Mark a set of characxter on the same line. On left side [...] select: Copy Permalink - this will only create a link (not embedded!)
 https://github.com/Pasgaard/Xperior-Sandbox/blob/141a3871c5b5f3c6015d2dab53abde1c36fb6030/DiscreteEventTrainingController.cs#L24C35-L24C55
 
-## Testing refrenced links directly
-[DiscreteEventTrainingController.cs](DiscreteEventTrainingController.cs#L17-L72)
+## Testing refrenced links directly (./src/DiscreteEventTrainingController.cs#L17-L72)
+[DiscreteEventTrainingController.cs](./src/DiscreteEventTrainingController.cs#L17-L72)
 
 **Authors**
 > Xperior
