@@ -6,13 +6,15 @@
 ## Testing videos
 
 ### Animated.gif
-![Gif Format](GhostWMS.gif)
+![Gif Format](Videos/GhostWMS.gif)
 
 ### Format .mp4
 ![VideoMovFormat.mov](https://github.com/Pasgaard/Xperior-Sandbox/blob/main/Videos/Media1.mp4)
 
 ### Format .mov
 ![Mov Format](Videos/VideoMovFormat.mov)
+
+![alt text](image-2.png)
 
 ## Testing various text formatting 
 
